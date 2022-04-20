@@ -12,6 +12,7 @@
     android:id="@+id/rv_RockMusic"
     tools:listitem="@layout/list_item"
     android:background="@color/red"
+
     />
 
 

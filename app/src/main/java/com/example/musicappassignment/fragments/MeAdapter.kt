@@ -33,7 +33,7 @@ class MeAdapter(private val data: List<Property>) : RecyclerView.Adapter<MeAdapt
 
             collectionName.text = property.trackName
             artistName.text = property.artistName
-            trackPrice.text = property.trackPrice.toString()
+            trackPrice.text = "$" + property.trackPrice.toString() + "USD"
             Picasso.get().load(property.artworkUrl60).into(tvArtworkUrl60)
 
             Glide.with(view.context).load(property.artworkUrl60).centerCrop().into(tvArtworkUrl60)
